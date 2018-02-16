@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: E:\CODE\Yet-Another-IoT-Node\pH-SPI-Shield\HW-V1.0\PH.PcbDoc
+LayersSetName=Top_Bot_Plated_Thru_Holes|DrillFile=ph-roundholes-plated.txt|DrillLayers=gtl,gbl
+LayersSetName=Top_Bot_NonPlated_Slot_Holes|DrillFile=ph-slotholes-nonplated.txt|DrillLayers=gtl,gbl

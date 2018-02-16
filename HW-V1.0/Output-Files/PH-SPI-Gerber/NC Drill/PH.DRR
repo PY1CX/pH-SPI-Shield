@@ -1,0 +1,21 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: PH.PcbDoc   13/02/2018  20:38:09
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII Plated RoundHoles File : PH-RoundHoles-Plated.TXT
+ASCII Non-Plated SlotHoles File : PH-SlotHoles-NonPlated.TXT
+EIA File   : PH.DRL
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      12mil (0.3mm)                                             Round             87        PTH        12.42inch (315.56mm)
+T2      35mil (0.9mm)                                             Round             11        PTH        2.35inch (59.69mm)
+T3      59mil (1.5mm)                                             Round             2         PTH        0.51inch (13.00mm)
+T4      98mil (2.5mm)                                             Round             8         PTH        1.80inch (45.80mm)
+T5      118mil (3mm)                                              Round             1         PTH        0.00inch (0.00mm)
+T7      39mil (1mm)                                               Slot              4         NPTH       2.38inch (60.38mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              113
+
+Total Processing Time (hh:mm:ss) : 00:00:00

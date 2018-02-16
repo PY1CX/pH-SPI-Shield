@@ -1,0 +1,15 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [PH.PcbDoc]
+   Generated File[PH-RoundHoles-Plated.TXT]
+   Generated File[PH-SlotHoles-NonPlated.TXT]
+   Generated File[PH.DRL]
+   Generated File[PH-BoardEdgeRout.TXT]
+   Generated File[PH.LDP]
+   Generated File[PH.DRR]
+
+
+Files Generated   : 6
+Documents Printed : 0
+
+Finished Output Generation At 20:38:09 On 13/02/2018
