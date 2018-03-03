@@ -16,7 +16,7 @@ ADS1220 adc;
 long adc_reading;
 
 #define PGA 1                 // Programmable Gain = 1
-#define VREF 2.048            // Internal reference of 2.048V
+#define VREF 2.048            // External Reference 2.048V
 #define VFSR VREF/PGA             
 #define FSR (((long int)1<<23)-1)  
 
@@ -37,7 +37,6 @@ void setup() {
   adc.setPGAbypass(0x00);
 
   adc.setMultiplexer(0x00);
-  
 }
 
 /* 
@@ -48,7 +47,7 @@ void setup() {
  */
 
 void loop() {
-  //Fazer aquisição do pH
+    //Get pH data
     adc.setMultiplexer(0x00);
     adc.setGain(1);
     delay(10);
@@ -68,11 +67,14 @@ void loop() {
     long adcVal = * point;
     adcVal = (adcVal << 8) | *(point + 1);
     adcVal = (adcVal << 8) | *(point + 2);
-  
-    //adcVal = ( adcVal << 8 );
-    //adcVal = ( adcVal >> 8 );
+#ifdef DEBUG  
+    adcVal = ( adcVal << 8 );
+    adcVal = ( adcVal >> 8 );
+#endif    
     float Vout = (float)((adcVal*VFSR*1000)/FSR);     //In  mV
-//  Serial.println(Vout);
+#ifdef DEBUG
+    Serial.println(Vout);
+#endif    
     float pH   = 7 + (Vout / -59.16);
     Serial.println(pH);
 
